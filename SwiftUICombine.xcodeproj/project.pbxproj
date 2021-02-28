@@ -13,6 +13,9 @@
 		C994845525EC003700CAC623 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994844025EC003500CAC623 /* ContentView.swift */; };
 		C994845625EC003700CAC623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C994844125EC003700CAC623 /* Assets.xcassets */; };
 		C994845725EC003700CAC623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C994844125EC003700CAC623 /* Assets.xcassets */; };
+		C994846A25EC021500CAC623 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994846925EC021500CAC623 /* ContentViewModel.swift */; };
+		C994846E25EC045B00CAC623 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994846D25EC045B00CAC623 /* Service.swift */; };
+		C994847225EC0AB400CAC623 /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994847125EC0AB400CAC623 /* TimeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		C994844E25EC003700CAC623 /* SwiftUICombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C994845025EC003700CAC623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C994845125EC003700CAC623 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		C994846925EC021500CAC623 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		C994846D25EC045B00CAC623 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		C994847125EC0AB400CAC623 /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +63,11 @@
 		C994843E25EC003500CAC623 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				C994843F25EC003500CAC623 /* SwiftUICombineApp.swift */,
-				C994844025EC003500CAC623 /* ContentView.swift */,
+				C994846625EC008B00CAC623 /* Services */,
+				C994846525EC008400CAC623 /* Models */,
+				C994846425EC007E00CAC623 /* Views */,
+				C994846325EC007300CAC623 /* ViewModels */,
+				C994846225EC006600CAC623 /* Main */,
 				C994844125EC003700CAC623 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -88,6 +97,46 @@
 				C994845125EC003700CAC623 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		C994846225EC006600CAC623 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C994843F25EC003500CAC623 /* SwiftUICombineApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C994846325EC007300CAC623 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C994846925EC021500CAC623 /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C994846425EC007E00CAC623 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C994844025EC003500CAC623 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C994846525EC008400CAC623 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C994847125EC0AB400CAC623 /* TimeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C994846625EC008B00CAC623 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C994846D25EC045B00CAC623 /* Service.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +237,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C994845425EC003700CAC623 /* ContentView.swift in Sources */,
+				C994846E25EC045B00CAC623 /* Service.swift in Sources */,
 				C994845225EC003700CAC623 /* SwiftUICombineApp.swift in Sources */,
+				C994846A25EC021500CAC623 /* ContentViewModel.swift in Sources */,
+				C994847225EC0AB400CAC623 /* TimeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
